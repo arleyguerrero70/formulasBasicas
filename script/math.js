@@ -28,3 +28,21 @@ function calcularCirculo (radio){
 }
 
 console.groupEnd("Círculo")
+
+console.group("Calcular altura triángulo")
+
+function calcularAlturaTrianguloIsosceles (base, lado1){
+    const ladoA = lado1
+    const ladoB = lado1
+    const baseTriangulo = base
+
+
+    if(lado1 == base){
+        console.warn("Este no puede ser un triángulo Isósceles")
+    } else {
+        const alturaTriangulo = Math.sqrt(Math.pow(ladoA, 2) - (Math.pow(baseTriangulo, 2) / 4)).toFixed(2)
+        return alturaTriangulo
+    }
+}
+
+console.groupEnd("Calcular altura triángulo")
